@@ -31,7 +31,6 @@
   background-color: #40005d;
   color: white;
   border-radius: 12px;
-  margin-right: 0rem;
 }
 
 .go-back button:hover,
@@ -97,9 +96,10 @@ main#about h1 {
 }
 
 #main-footer {
-  width: 100%;
-  margin-left: -10px;
-  margin-bottom: -10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 30px;
   text-align: center;
   padding: 1rem;
@@ -138,15 +138,22 @@ main#about h1 {
     max-width: 250px;
   }
 
+  html {
+    position: relative;
+  }
+
+  body {
+    margin-bottom: 20vh;
+  }
+
+  #main-footer {
+    position: absolute;
+    height: 30px;
+  }
+
   @media screen and (max-width: 500px) {
     main {
       min-height: calc(100vh - 30px);
-    }
-    footer {
-      height: 30px;
-    }
-    .mobile {
-      margin: -30px;
     }
   }
 }
