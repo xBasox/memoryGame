@@ -7,8 +7,9 @@
 }
 
 .text-secondary {
+  padding-top: 5vh;
   text-align: center;
-  color: #ee1a6f;
+  color: #a892ee;
 }
 
 .go-back {
@@ -63,7 +64,7 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0;
+  margin: 20px;
   font-weight: 600;
 }
 
@@ -79,7 +80,7 @@ header {
 }
 
 main {
-  min-height: calc(100vh - 30px);
+  min-height: calc(100vh - 90px);
 }
 
 main#home,
@@ -96,6 +97,9 @@ main#about h1 {
 }
 
 #main-footer {
+  width: 100%;
+  margin-left: -10px;
+  margin-bottom: -10px;
   height: 30px;
   text-align: center;
   padding: 1rem;
@@ -120,6 +124,14 @@ main#about h1 {
     min-height: calc(100vh - 30px);
     align-items: center;
     text-align: center;
+  }
+
+  #grid {
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media screen and (max-width: 500px) {
