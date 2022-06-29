@@ -17,7 +17,7 @@
   padding: 1rem;
   margin: 2rem auto;
   width: 50rem;
-  max-width: 95%;
+  max-width: 400px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -31,7 +31,7 @@
   background-color: #40005d;
   color: white;
   border-radius: 12px;
-  margin-right: 1rem;
+  margin-right: 0rem;
 }
 
 .go-back button:hover,
@@ -132,6 +132,10 @@ main#about h1 {
     height: 400px;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .go-back {
+    max-width: 250px;
   }
 
   @media screen and (max-width: 500px) {
